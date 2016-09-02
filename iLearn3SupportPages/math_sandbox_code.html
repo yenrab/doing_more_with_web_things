@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <title>math sandbox code example</title>
+  <script>
+  /*
+
+    THIS IS NOT A TEMPLATE!!! Do not copy and past this file to create your own sandbox code.
+
+    Each JavaScript function, method, or class you sandbox will have a different number of things  you should play with in the sandbox. Do NOT assume that your sandbox code  should play with the same number of things as this example.
+
+    To create sandbox code for a function or method, examine its description online (You can Google it). Select what you believe are the most commonly made mistakes play with those. After you have completed that step, contact your mentor or instructor for additional ideas, methods, functions, and classes you should add to your sandbox code.
+
+    To make your sandbox code efficient for your later use, you must comment it heavily. That way you'll remember what you were doing and won't have to guess.
+
+    The comments you write should include whether the specific use of the method is a happy or a nasty path. If it is a nasty path you should state what terrible thing you're doing to the method.
+
+    Another comment about what happened when you abused the method in a nasty path will also help you remember what happened when you abused the method. You'll see examples (NOT templates) of comments in the example below.
+
+    NEVER comment out nasty paths. Make them work by surrounding them with try/catch or something similar. Sandbox code that is most efficient for your later use always runs without using input or action, without any if statements, and it runs all happy and nasty paths without commenting them in and out.
+
+    You don't need to create extra functionsto write most sandbox code (one execption is DOM manipulation methods). If you are sandboxing functions, methods, or classes that already exist in JavaScript you can write all of your happy and nasty paths in a single script tag.
+
+
+    This example shows sandbox code for two methods of the Math class as it would be submitted to your mentor or instructor to get additional ideas for sandboxing. It is NOT an example of completed sandbox code.
+
+
+ */
+  		//Sandboxing Math functions
+
+  		//Sandboxing square root
+
+  		//Happy path - square root of a positive integer
+  		var root = Math.sqrt(4)
+  		console.log(root)
+  		//Result - 2 writen to the console
+
+  		//Nasty path - negative number
+  		root = Math.sqrt(-10)
+  		console.log(root)
+  		//Result - NaN (Not a Number) written to console
+
+  		//Nasty path - string
+  		root = Math.sqrt("hello")
+  		console.log(root)
+  		//Result - NaN written to console
+
+  		//Nasty path - empty string
+  		root = Math.sqrt("")
+  		console.log(root)
+  		//Result - 0 written to console
+
+  		//Nasty path - null
+  		root = Math.sqrt(null)
+  		console.log(root)
+  		//Result - 0 written to console
+
+  		//Sandboxing absolute value
+
+  		//Happy path - absolute value of a negative number
+  		var absValue = Math.abs(-100)
+  		console.log(absValue)
+  		//Result - 100 written to console
+
+  		//Nasty path - positive value
+  		absValue = Math.abs(21)
+  		console.log(absValue)
+  		//Result - 21 written to console
+
+  		//Nasty path - string
+  		absValue = Math.abs("hello")
+  		console.log(absValue)
+  		//Result - NaN written to console
+
+  		//Nasty path - empty string
+  		absValue = Math.abs("")
+  		console.log(absValue)
+  		//Result - 0 written to console
+
+  		//Nasty path - null
+  		absValue = Math.abs(null)
+  		console.log(absValue)
+  		//Result - 0 written to console
+
+
+  </script>
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+	<p>Hello</p>
+</body>
+</html>
